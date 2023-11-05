@@ -1,0 +1,46 @@
+package Java;
+
+///this is my parent class
+ class person{
+    String name;
+    int age;
+
+    void displayInformation()
+    {
+        System.out.println("Name :"+name);
+        System.out.println("Age :"+age);
+    }
+}
+
+////this is my inheritance class
+class teacher extends person{
+
+    String qualification;
+
+    @Override
+
+    void displayInformation()
+    {
+        System.out.println("Name :"+name);
+        System.out.println("Age :"+age);
+        System.out.println("Qualification :"+qualification);
+
+    }
+
+}
+
+    ///in this class i use all main function work
+    public class overide{
+        public static void main(String[] args) {
+
+            teacher t1=new teacher();
+            t1.name="Khairul";
+            t1.age=20;
+            t1.qualification="BSC in CSE";
+
+
+            t1.displayInformation();
+        }
+    }
+
+
